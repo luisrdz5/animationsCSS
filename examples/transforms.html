@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .example-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(30%, 45%));
+            justify-content: center;
+            grid-gap: 20px;
+        }
+        .example-item {
+            position: relative;
+            display: block;
+        }
+        .example-text {
+            height: 100px;
+            display: block;
+            background-color: #cac5c5;
+            text-align: center;
+            align-items: center;
+        }
+        .example-display {
+            display: flex;
+            height: 300px;
+            background-color: rgb(173, 198, 243);
+            align-items: center;
+            justify-content: center;
+        }
+        /*  here start the examples styles*/ 
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            background: #7dc900;
+            margin: 20px;
+            transition: .3s;
+            cursor: pointer;
+        }
+            /*.cuadrado:hover {*/
+        .container:hover .cuadrado {
+            /*transform: rotate(45deg);*/
+            /*transform: rotate(-45deg);*/
+            /*transform: rotateX(45deg);*/
+            /*transform: rotateY(45deg);*/
+            /*transform: rotateZ(45deg);*/
+            /*transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);*/
+            /*transform: rotate3d(x, y, z, rotate);*/
+            /*transform: rotate3d(1, 0, 0, 45deg);*/
+            /*transform: rotate3d(0, 1, 0, 45deg);*/
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        /* Translate CSS */
+        .cuadrado_translate {
+            width: 100px;
+            height: 100px;
+            background: #7dc900;
+            margin: 20px;
+            transition: .3s;
+            cursor: pointer;
+        }
+        .container_translate:hover .cuadrado_translate {
+      /*transform: translate(x);*/
+      /*transform: translate(-100px);*/
+      /*transform: translate(x, y);*/
+      /*transform: translate(100px, 100px);*/
+      /*transform: translate(-100px, -100px);*/
+      /*transform: translateX(100px);*/
+      /*transform: translateY(100px);*/
+      /*transform: translateZ(100px);*/
+      /*transform: translate3d(x, y, z);*/
+      /*transform: translate3d(100px, 100px, 100px);*/
+      transform: translate3d(-100px, -100px, -100px);
+    }
+        /* Scale CSS */
+        .cuadrado_scale {
+      width: 100px;
+      height: 100px;
+      background: #7dc900;
+      margin: 20px;
+      transition: .3s;
+    }
+    .container_scale:hover .cuadrado_scale {
+      /*transform: scale(x, y);*/
+      /*transform: scale(0 = 0% del tamaño - 1 = 100% del tamaño);*/
+      /*transform: scale(2)*/
+      /*transform: scale(.5);*/
+      transform: scale(2, .5);
+    }
+
+    /* Skew CSS */
+
+    .cuadrado_skew {
+      width: 100px;
+      height: 100px;
+      background: #7dc900;
+      margin: 20px;
+      transition: .3s;
+    }
+    .container_skew:hover .cuadrado_skew {
+      /*transform: skew(x, y);*/
+      /*transform: skew(45deg);*/
+      /*transform: skew(45deg, 45deg);*/
+      transform: skew(10deg, 10deg);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="example-container">
+            <div class="example-item">
+                <div class="example-text">
+                    Rotate Example <br />
+                    transform: rotate3d(0, 0, 1, 45deg);
+                </div>
+                <div class="example-display">
+                    <div class="container">
+                        <div class="cuadrado">
+                        Hola mundo!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-item">
+                <div class="example-text">
+                   Translate Example <br />
+                   transform: translate3d(-100px, -100px, -100px);
+                </div>
+                <div class="example-display">
+                    <div class="container_translate">
+                        <div class="cuadrado_translate">
+                            Hola mundo!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="example-item">
+                <div class="example-text">
+                    Transform Scale <BR/>
+                    transform: scale(2, .5);
+                </div>
+                <div class="example-display">
+                    <div class="container_scale">
+                        <div class="cuadrado_scale">
+                            Hola mundo!
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="example-item">
+                <div class="example-text">
+                    Transform skew <BR/>
+                    transform: skew(10deg, 10deg);
+                </div>
+                <div class="example-display">
+                    <div class="container_skew">
+                        <div class="cuadrado_skew">
+                            Hola mundo!
+                        </d
+                </div>
+            </div>
+
+    </div>
+
+    
+</body>
+</html>
