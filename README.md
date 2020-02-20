@@ -71,4 +71,3 @@ You can check all the enimation types in this [link](https://developer.mozilla.o
 examples:         
     [link](./examples/javascript.html)
 
-- Animations in ReactJS
