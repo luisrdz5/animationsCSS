@@ -58,11 +58,17 @@ Note: You can change the origin of the transformation
     - Animations (acceleration and bezier curve )
         - animation-timing-function: cubic-bezier(.75,-0.31,.33,1.4);
     Note: to get bezier curve examples visit [cubic-bezier.com](https://cubic-bezier.com/)
+examples: 
+    [link](./examples/animations.html)
 
-- Web Animations API (JS Animations)
+You can check all the enimation types in this [link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
 
 
 
 - Animations Types
+    - element.animate
+        - element.animate(keyframes = [], option = {})
+examples:         
+    [link](./examples/javascript.html)
 
 - Animations in ReactJS
